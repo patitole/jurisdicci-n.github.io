@@ -1,0 +1,593 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        select, input {
+            width: 100%;
+        }
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="dataForm">
+        <div>
+            <label for="departamento">Departamento que Solicita:</label>
+            <input type="text" id="departamento" name="departamento" value="Salud Reproductiva">
+        </div>
+        <div>
+            <label for="nombre">Nombre de quien solicita:</label>
+            <input type="text" id="nombre" name="nombre" value="Dra. Laura Perez Iglesias">
+        </div>
+        <div>
+            <label for="fecha">Fecha de Solicitud:</label>
+            <input type="date" id="fecha" name="fecha" value="2022-12-06">
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Clave CLUES Unidad</th>
+                    <th>Nombre de la Unidad</th>
+                    <th>Clave Actual</th>
+                    <th>Total (Asi Esta) Esta</th>
+                    <th>Clave Cambio</th>
+                    <th>Total (Asi Queda) Esta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="number" value="1"></td>
+                    <td>
+                        <select name="claveClues5">
+                            <option value="MCSSA003625">MCSSA003625</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad5">
+                            <option value="SANTIAGO YECHE">SANTIAGO YECHE</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="claveActual5">
+                            <option value="FUP01">FUP01</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>
+                        <select name="claveCambio5">
+                            <option value="FUP01">FUP01</option>
+                            <td><input type="number" value="1"></td>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="2"></td>
+                    <td>
+                        <select name="claveClues6">
+                            <option value="MCSSA003625">MCSSA003625</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad6">
+                            <option value="SANTIAGO YECHE">SANTIAGO YECHE</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="claveActual6">
+                            <option value="FUP02">FUP02</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="2"></td>
+                    <td>
+                        <select name="claveCambio6">
+                            <option value="FUP02">FUP02</option>
+                            <td><input type="number" value="2"></td>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="3"></td>
+                    <td>
+                        <select name="claveClues7">
+                            <option value="MCSSA003625">MCSSA003625</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad7">
+                            <option value="SANTIAGO YECHE">SANTIAGO YECHE</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="claveActual7">
+                            <option value="FUP03">FUP03</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="3"></td>
+                    <td>
+                        <select name="claveCambio7">
+                            <option value="FUP03">FUP03</option>
+                            <td><input type="number" value="3"></td>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="4"></td>
+                    <td>
+                        <select name="claveClues8">
+                            <option value="MCSSA003951">MCSSA003951</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad8">
+                            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="claveActual8">
+                            <option value="FUP01">FUP01</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="4"></td>
+                    <td>
+                        <select name="claveCambio8">
+                            <option value="FUP01">FUP01</option>
+                            <td><input type="number" value="4"></td>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="5"></td>
+                    <td>
+                        <select name="claveClues9">
+                            <option value="MCSSA003951">MCSSA003951</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad9">
+                            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="claveActual9">
+                            <option value="FUP02">FUP02</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="5"></td>
+                    <td>
+                        <select name="claveCambio9">
+                            <option value="FUP02">FUP02</option>
+                            <td><input type="number" value="5"></td>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="6"></td>
+                    <td>
+                        <select name="claveClues10">
+                            <option value="MCSSA003951">MCSSA003951</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad10">
+                            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+                        </select>
+                    </td>
+                    <td>
+                    
+                        <select name="claveActual10">
+                            <option value="FUP03">FUP03</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="6"></td>
+                    <td>
+                        <select name="claveCambio10">
+                            <option value="FUP03">FUP03</option>
+                            <td><input type="number" value="6"></td>
+                        </select>
+                    </td>
+                </tr>
+                <td><input type="number" value="7"></td>
+                    <td>
+                        <select name="claveClues10">
+                            <option value="MCSSA003951">MCSSA003951</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nombreUnidad10">
+                            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+                        </select>
+                    </td>
+                    <td>
+                    
+                        <select name="claveActual10">
+                            <option value="FUP03">FUP03</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="7"></td>
+                    <td>
+                        <select name="claveCambio10">
+                            <option value="FUP03">FUP03</option>
+                            <td><input type="number" value="7"></td>
+                        </select>
+                    </td>
+        </tr>
+        <td><input type="number" value="8"></td>
+            <td>
+                <select name="claveClues10">
+                    <option value="MCSSA003951">MCSSA003951</option>
+                </select>
+            </td>
+            <td>
+                <select name="nombreUnidad10">
+                    <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+                </select>
+            </td>
+            <td>
+            
+                <select name="claveActual10">
+                    <option value="FUP03">FUP03</option>
+                </select>
+            </td>
+            <td><input type="number" value="8"></td>
+            <td>
+                <select name="claveCambio10">
+                    <option value="FUP03">FUP03</option>
+                    <td><input type="number" value="8"></td>
+                </select>
+            </td>
+        </tr>
+    </tr>
+    <td><input type="number" value="9"></td>
+        <td>
+            <select name="claveClues10">
+                <option value="MCSSA003951">MCSSA003951</option>
+            </select>
+        </td>
+        <td>
+            <select name="nombreUnidad10">
+                <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+            </select>
+        </td>
+        <td>
+        
+            <select name="claveActual10">
+                <option value="FUP03">FUP03</option>
+            </select>
+        </td>
+        <td><input type="number" value="9"></td>
+        <td>
+            <select name="claveCambio10">
+                <option value="FUP03">FUP03</option>
+                <td><input type="number" value="9"></td>
+            </select>
+        </td>
+    </tr>
+</tr>
+<td><input type="number" value="10"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="10"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="10"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="11"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="11"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="11"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="12"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="12"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="12"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="13"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="13"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="13"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="14"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="14"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="14"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="15"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="15"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="15"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="16"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="16"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="16"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="17"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="17"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="17"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="18"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="18"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="18"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="19"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="19"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="19"></td>
+        </select>
+    </td>
+</tr>
+</tr>
+<td><input type="number" value="20"></td>
+    <td>
+        <select name="claveClues10">
+            <option value="MCSSA003951">MCSSA003951</option>
+        </select>
+    </td>
+    <td>
+        <select name="nombreUnidad10">
+            <option value="CEAPS SAN BARTOLO MORELOS">CEAPS SAN BARTOLO MORELOS</option>
+        </select>
+    </td>
+    <td>
+    
+        <select name="claveActual10">
+            <option value="FUP03">FUP03</option>
+        </select>
+    </td>
+    <td><input type="number" value="20"></td>
+    <td>
+        <select name="claveCambio10">
+            <option value="FUP03">FUP03</option>
+            <td><input type="number" value="20"></td>
+        </select>
+    </td>
+</tr>
+                <!-- Continuar añadiendo filas según sea necesario -->
+            </tbody>
+
+        </table>
+        <button type="button" onclick="saveData()">Guardar</button>
+        <button type="button" onclick="printPage()">Imprimir</button>
+    </form>
+
+    <script>
+        function saveData() {
+            const formData = new FormData(document.getElementById('dataForm'));
+            const entries = Object.fromEntries(formData.entries());
+            console.log('Datos guardados:', entries);
+            alert('Datos guardados en la consola (reemplazar con lógica de guardado real).');
+        }
+
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
